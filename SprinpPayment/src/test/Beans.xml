@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="CardPament" class="test.CardPament"></bean>
+<bean id="Cash" class="test.CashPay"></bean>
+<bean id="d" class="test.DebittPay"/>
+<bean id="pp" class="test.PhonPay"/>
+<bean id="p" class="test.PaymentContext">
+<property name="payment" ref="pp"></property>
+</bean>
+
+</beans>
